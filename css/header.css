@@ -1,0 +1,81 @@
+
+.header-container {
+    border: 2px solid orange;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top {
+    background-color: #111;
+    flex: 1;
+    
+}
+
+.header-menu {
+    background-color: var(--primary-color);
+    flex: 1;
+}
+
+.main-header {
+    max-width: 1230px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+}
+
+.main-header-top {
+    padding: 0 1.5rem;
+    align-items: center;
+    color: white;
+}
+.main-header-top .countdown {
+    flex: 1;
+    text-align: center;
+}
+.main-header-top .anunssement {
+    flex: 1;
+    text-align: center;
+}
+.main-header-top .action-temu-app {
+    flex: 1;  
+    text-align: center;  
+}
+
+
+.main-header-menu {
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.main-header-menu .logo {
+    flex: 1;
+}
+.main-header-menu .navbar {
+    flex: 3;
+}
+.main-header-menu .search-bar {
+    flex: 2;
+}
+.main-header-menu .icons-menu {
+    flex: 2;
+}
+
+
+/*  Banner Hero Clickable  */
+
+.banner-hero {
+    height: 40vh;
+    background-color: rgb(201, 182, 158);
+    
+}
+.banner-hero .banner-wrapper {
+    max-width: 1230px;
+    margin: 0 auto;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+}
