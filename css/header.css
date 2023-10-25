@@ -1,6 +1,6 @@
+/*  Header Top  */
 
 .header-container {
-    border: 2px solid orange;
     height: 20vh;
     display: flex;
     flex-direction: column;
@@ -9,12 +9,13 @@
 .header-top {
     background-color: #111;
     flex: 1;
-    
+   
 }
 
 .header-menu {
     background-color: var(--primary-color);
     flex: 1;
+ 
 }
 
 .main-header {
@@ -31,9 +32,26 @@
 }
 .main-header-top .countdown {
     flex: 1;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #eeeeeecc;
 }
-.main-header-top .anunssement {
+.main-header-top .countdown .icon-truck {
+    flex: 1;
+    font-size: 1.7rem;
+}
+.main-header-top .countdown .title {
+    flex: 3;
+    font-size: 1rem;
+    text-align: left;
+}
+.main-header-top .countdown .counter {
+    flex: 3;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.main-header-top .anuncio {
     flex: 1;
     text-align: center;
 }
@@ -42,6 +60,7 @@
     text-align: center;  
 }
 
+/*  Header Menu  */
 
 .main-header-menu {
     justify-content: space-around;
@@ -51,10 +70,29 @@
 }
 .main-header-menu .logo {
     flex: 1;
+    background-color: white;
 }
+.main-header-menu .logo img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
 .main-header-menu .navbar {
     flex: 3;
 }
+.main-header-menu .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: .6rem;
+}
+.main-header-menu .navbar ul li a {
+    font-size: .9rem;
+    color: white;
+    text-combine-upright: none;
+}
+
+
 .main-header-menu .search-bar {
     flex: 2;
 }
@@ -67,7 +105,7 @@
 
 .banner-hero {
     height: 40vh;
-    background-color: rgb(201, 182, 158);
+    background-color: rgb(214, 178, 200);
     
 }
 .banner-hero .banner-wrapper {
