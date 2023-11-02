@@ -70,6 +70,9 @@
 }
 .main-header-menu .logo {
     flex: 1;
+    object-fit: cover;
+    height: auto;
+    width: auto;
     background-color: white;
 }
 .main-header-menu .logo img {
@@ -80,6 +83,7 @@
 
 .main-header-menu .navbar {
     flex: 3;
+    border: 2px solid white;
 }
 .main-header-menu .navbar ul {
     list-style: none;
@@ -87,18 +91,86 @@
     gap: .6rem;
 }
 .main-header-menu .navbar ul li a {
-    font-size: .9rem;
+    font-size: .8rem;
     color: white;
     text-combine-upright: none;
+    text-decoration: none;
+}
+.main-header-menu .navbar ul li .nav-icon {
+    font-size: .9rem;
 }
 
-
-.main-header-menu .search-bar {
+.search-bar {
     flex: 2;
+    margin: 0 .7rem;
+    border: 2px solid lightblue;
+    position: relative;
 }
+.search-bar .input_search {
+    border: none;
+    outline: none;
+    background-color: lightgoldenrodyellow;
+    padding: .8rem;
+    width: 80%;
+    border-radius: 20px;
+    position: relative;
+}
+.search-bar .search-icon {
+    position: absolute;
+    right: 5px;
+    left: 5px;
+    background-color: #111;
+    color: white;
+    width: 30px;
+    height: 35px;
+    border-radius: 15px;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .main-header-menu .icons-menu {
     flex: 2;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
 }
+.icons-menu .sign-register-content {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.icons-menu .sign-register-content .sign-order span {
+    font-size: .6rem;
+}
+.icons-menu .sign-register-content .sign-order h3 {
+    font-size: .8rem;
+}
+
+.icons-menu .support-content {
+    margin-left: .5rem;
+    display: flex;
+    gap: .7rem;
+}
+.icons-menu .support-content span,
+.icons-menu .support-content .fa-comment {
+    font-size: .8rem;
+}
+
+.icons-menu .lang-content {
+    margin-left: .5rem;
+}
+.icons-menu .lang-content span,
+.icons-menu .lang-content .fa-circle {
+    font-size: .8rem;
+}
+
+.icons-menu .cart-icon {
+    margin-left: .8rem;
+} 
 
 
 /*  Banner Hero Clickable  */
