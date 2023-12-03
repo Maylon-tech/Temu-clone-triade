@@ -69,26 +69,24 @@
     color: white;
 }
 .main-header-menu .logo {
-    flex: 1;
-    object-fit: cover;
-    height: auto;
-    width: auto;
-    background-color: white;
+    flex: 0.5;
 }
 .main-header-menu .logo img {
-    width: 70%;
-    height: 70%;
-    object-fit: contain;
+    width: 54%;
+    height: 54%;
 }
 
 .main-header-menu .navbar {
     flex: 3;
-    border: 2px solid white;
 }
 .main-header-menu .navbar ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: .6rem;
+}
+.main-header .navbar li {
+    padding: 2px;
 }
 .main-header-menu .navbar ul li a {
     font-size: .8rem;
@@ -103,7 +101,6 @@
 .search-bar {
     flex: 2;
     margin: 0 .7rem;
-    border: 2px solid lightblue;
     position: relative;
 }
 .search-bar .input_search {
@@ -111,23 +108,25 @@
     outline: none;
     background-color: lightgoldenrodyellow;
     padding: .8rem;
-    width: 80%;
+    width: 100%;
+    font-size: 1.1rem;
     border-radius: 20px;
     position: relative;
 }
 .search-bar .search-icon {
     position: absolute;
+    top: 2px;
     right: 5px;
-    left: 5px;
     background-color: #111;
     color: white;
     width: 30px;
     height: 35px;
-    border-radius: 15px;
+    border-radius: 50%;
     z-index: 20;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 
@@ -181,11 +180,105 @@
     
 }
 .banner-hero .banner-wrapper {
-    max-width: 1230px;
+    max-width: 1320px;
     margin: 0 auto;
-    height: 100%;
+}
+.banner-wrapper img {
+    width: 100%;
+    height: 245px;    
+}
 
-    display: grid;
-    place-items: center;
-    font-size: 2rem;
+/*  Menu Info Banner TOP  */
+
+.container-hero {
+    border: 3px solid orangered;
+    display: flex;
+    flex-direction: column;
+    max-width: 1260px;
+    margin: 1.5rem auto;
+}
+
+.container-hero .banner-info-top {
+    flex: 1;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 3px;
+}
+.banner-info-top .left-info {
+    flex: 3;
+}
+.banner-info-top .left-info ul {
+    display: flex;
+    gap: 1rem;
+    padding: .7rem 1.8rem;
+    list-style: none;
+}
+.banner-info-top .left-info ul li {
+    padding: .5rem;
+}
+.banner-info-top .left-info a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+.banner-info-top .left-info i {
+    font-size: 1.1rem;
+    margin-right: 8px;
+}
+
+.banner-info-top .right-info {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    padding-right: 1.6rem;
+    padding: .7rem;
+}
+.banner-info-top .right-info a {
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #222;
+}
+.banner-info-top .right-info i {
+    font-size: 1.1rem;
+    color: rgb(87, 82, 82);
+}
+
+/* Menu Info Banner Bottom  */
+
+.container-hero .banner-info-bottom {
+    flex: 1;
+    background-color: lightgreen;
+    border-radius: 3px;
+}
+.banner-info-bottom .info-wrapper {
+    border: 2px solid red;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+}
+.banner-info-bottom .info-wrapper .time-count {
+    display: flex;
+}
+.info-wrapper i {
+    margin-right: 12px;
+    font-size: 1.3rem;
+    color: goldenrod;
+}
+.info-wrapper .info-txt {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 600;
+}
+.info-wrapper .time-count {
+    margin-left: 1.3rem;
+    border: 2px solid blue;
+    padding: .5rem;
 }
